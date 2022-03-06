@@ -38,7 +38,6 @@ h2 {
 p {
     font-family: 'Roboto', sans-serif;
     padding: 1rem;
-    margin: 1rem 0;
     line-height: 2rem;
     font-size: 1.5rem;
 }
@@ -253,28 +252,40 @@ footer {
 form {
     margin: 0 auto;
 }
+
 input {
     display: block;
     margin: 1rem;
 }
+
 input[type="submit"] {
     line-height: 2rem;
     padding: 0 1rem;
     font-size: 1rem;
 }
+
 label {
     display: block;
     font-weight: bold;
     font-size: 1.5rem;
     margin: 1rem;
 }
+
 textarea {
     display: block;
     margin: 1rem;
 }
 
-
-
+/* Projects website figure element */
+#projects_fig img{
+    width: 100%
+    height: auto;
+    margin-top: 2rem;
+}
+#projects_fig figcaption{
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+}
 
 /* Media breakpoints */
 @media screen and (max-width: 48rem) {

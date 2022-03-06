@@ -5,7 +5,7 @@
     --secondary-accent-color: #424642;
     --tertiary-accent-color: #2B2B2B;
     font-family: 'Noto Serif', serif;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 * {
@@ -23,13 +23,59 @@ body {
 
 h1 {
     color: var(--main-accent-color);
-	font-family: ;
     font-size: 7rem;
 	font-family: 'Noto Serif', serif;
 	letter-spacing: 0.2rem;
 }
 
-/* Home Page Title Text Component */
+h2 {
+	font-family: 'Noto Serif', serif;
+    margin: 2rem 0;
+    padding: 1rem;
+    font-size: 2.5rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem;
+    margin: 1rem 0;
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+
+.content_container {
+	max-width: 60rem;
+	margin: 0 auto;
+}
+
+.article_container {
+    max-width: 90ch;
+    min-width: 40ch;
+    margin: 0 auto;
+}
+
+.button {
+    border: 0.25rem var(--secondary-accent-color) solid;
+	background-color: var(--secondary-bg-color);
+    border-radius: 3rem;
+    text-align: center;
+    cursor: pointer;
+    line-height:5rem;
+    font-size: 2.5rem;
+	letter-spacing: 0.1rem;
+    text-align: center;
+	transition: all 0.4s;
+    margin-bottom: 1rem;
+}
+.button a{
+    text-decoration: none;
+    color: var(--tertiary-accent-color);
+}
+.button:hover {
+    background-color: var(--main-accent-color);
+}
+
+/* Home Page Title Component */
 #home_flex {
     display: flex;
     margin: 5rem auto;
@@ -67,7 +113,7 @@ h1 {
     line-height: 1.2em;
 }
 
-/* Home page navigation component */
+/* Home page nav component */
 .home_nav {
     display: flex;
     flex-direction: row;
@@ -77,7 +123,7 @@ h1 {
     margin: 0 auto 3rem auto;
 }
 
-.home_nav li {
+.home_nav a {
     flex: 1;
     border: 0.25rem var(--secondary-accent-color) solid;
 	background-color: var(--secondary-bg-color);
@@ -85,28 +131,28 @@ h1 {
     margin: 0.5rem 1rem;
     border-radius: 3rem;
     text-align: center;
-    list-style: none;
     cursor: pointer;
 	transition: background-color .4s;
+	text-decoration: none;
 }
 
-.home_nav li:hover {
+.home_nav a:hover {
 	background-color: var(--main-accent-color);
 }
 
-.home_nav li a {
-    text-decoration: none;
+.home_nav a li {
     line-height:5rem;
     font-size: 2.5rem;
 	letter-spacing: 0.1rem;
     color: var(--tertiary-accent-color);
 	transition: all 0.4s;
+	list-style: none;
 }
 
 /* Hamburger navigation menu component */
 #hamburger_menu {
     width: 100%;
-		margin-top: 0.5rem;
+	margin-top: 0.5rem;
 }
 #hamburger_menu input{
     display: none;
@@ -147,24 +193,88 @@ h1 {
 	font-size: 2rem;
 }
 
-.content_container {
-	max-width: 60rem;
-	margin: 0 auto;
+/* About me headshot and blurb component */
+#profile_blurb {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	margin: 3rem 0;
+	align-content: center;
 }
 
+#headshot {
+	display: block;
+	margin: auto 0;
+	max-width: 50%;
+	max-height: 50vw;
+	border-radius: 30px;
+}
+
+#blurb {
+	min-width: 25rem;
+	max-width: 45%;
+	margin: auto 0;
+	font-size: 2rem;
+	line-height: 5rem;
+	margin-left: 2rem;
+	text-align: center;
+    font-family: 'Noto Serif', serif;
+}
 
 /* Footer component */
 footer {
-    margin-top: auto;
+	margin-top: auto;
     padding-bottom: 0.5rem;
     width: 100%;
     background-color: var(--secondary-bg-color);
     color: var(--tertiary-accent-color);
+	font-family: 'Roboto', sans-serif;
     height: 3rem;
     font-size: 0.8rem;
     text-align: center;
     line-height: 3rem;
 }
+
+/* Contact socials component */
+#socials {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin: 0 3rem;
+}
+
+#socials a {
+    margin: 1rem;
+    opacity: 85%;
+}
+
+/* Contact form component*/
+form {
+    margin: 0 auto;
+}
+input {
+    display: block;
+    margin: 1rem;
+}
+input[type="submit"] {
+    line-height: 2rem;
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+textarea {
+    display: block;
+    margin: 1rem;
+}
+
+
+
 
 /* Media breakpoints */
 @media screen and (max-width: 48rem) {
@@ -181,7 +291,7 @@ footer {
         background-color: var(--main-bg-color);
     }
 
-    #menu_items li{
+    #menu_items a{
         display: block;
         width: 80%;
         margin: 1.5rem auto;

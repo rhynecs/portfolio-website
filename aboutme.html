@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Henry Stevens|About</title>
+	<title>Henry Stevens | About</title>
 	<link rel="stylesheet" href="main.css">
 
 	<meta charset="UTF-8">
@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <header>
@@ -19,9 +19,9 @@
 		<ul id="menu_items">
 			<a href="./index.html"><li>Home</li></a>
 			<a href="./aboutme.html"><li>About</li></a>
-			<a href=""><li>Projects</li></a>
-			<a href=""><li>Blog</li></a>
-			<a href=""><li>Contact</li></a>
+			<a href="./projects.html"><li>Projects</li></a>
+			<a href="./blog.html"><li>Blog</li></a>
+			<a href="./contact.html"><li>Contact</li></a>
 		</ul>
 	</nav>
 </header>
@@ -29,17 +29,27 @@
 <body>
 	<main>
 		<article class="content_container">
-			<img src="./images/profile.jpg" alt="Headshot of Henry" />
 			<h1>About</h1>
-			<p class="blurb">I'm a 23 year old student who is currently studying a full stack web development course at Coder Academy Bootcamp.</p>
-			<h2>Web Development?</h2>
-			<p>Yes! Web Development. I was exposed to the world of programming through the process of installing various game mods, and through digging around and trying to troubleshoot my family's tech problems! I've been interested in computing from a young age. </p>
-			<p>Out of high school, I started doing a couple python tutorials and started computer science and finance double degree. But due to a combination of little real programming exposure in the course, and my own trouble transitioning my study habits to university, I decided to move to Melbourne and change to a Chemical Engineering degree.</p>
-			<p>And I did really well in that degree! But I ultimately found that the field wasn't really going to be for me. So here I am, full circle again. Web development appeals to me because it allows me to tap in to my love of problem solving and express creativity through design. It also is a field that I can continuously learn and improve on, which is what I'm all about. </p>
-			<p>This time I come prepared, with study skills I've learned over and engineering degree, and all the right motivations. So web development, here I come!</p>
-			<h2>About Me</h2>
-			<p>I'm based in Melbourne, but I grew up across South Australia and Western Australia. Some of my interests are getting out into nature, gaming, cooking, reading, climbing and keeping fit. </p>
-			<p>For more about my work history and study check out my resume!<p>
+			<figure id="profile_blurb">
+				<img id="headshot" src="./resources/profile.jpg" alt="Headshot of Henry" />
+				<h2 id="blurb">I'm a student studying a full stack web development course at Coder Academy Bootcamp</p>
+			</figure>
+			<section class="article_container">
+				<h2>Why am I interested in becoming a web developer?</h2>
+				<p>Web development appeals to me because it allows me to tap in to my love of problem solving while allowing me to express some creativity through design. It's a field that I can continuously learn and improve on, which is what I'm all about. </p>
+				<h2>About me</h2>
+				<p>I've lived in Melbourne for the last four years, but I grew up in South Australia and Western Australia. Some of my interests are getting out into nature, gaming, cooking, reading, climbing and keeping fit. </p>
+				<p>For more about my work history and study check out my resume!<p>
+				<h2>How did I get here?</h2>
+				<p>I was exposed to the world of code as a kid in the process of installing various game mods, and troubleshoot my family's tech problems! I developed an interested in tech from a young age. </p>
+				<p>After high school, I did a computer science and finance double degree for a year, but due to a combination of having little real programming exposure in the course, and my own trouble transitioning my study habits to university, I decided to move to Melbourne and change to a Chemical Engineering degree for a fresh start.</p>
+				<p>And I did really well in my new degree, but I ultimately I decided that the field wouldn't be for me. So here I am, full circle again.</p>
+				<p>This time I come prepared with study skills I've learned over the course of an engineering degree, and all the right motivations. So web development, here I come!</p>
+				<h2>Check out my resume!</h2>
+			</section>
+			<div class="button">
+				<a href="resources/henry_stevens_resume.pdf" target="_blank">Download Resume</a>
+			</div>
 		</article>
 	</main>
 

@@ -74,7 +74,6 @@ p {
     background-color: var(--main-accent-color);
 }
 
-/* Home Page Title Component */
 #home_flex {
     display: flex;
     margin: 5rem auto;
@@ -98,10 +97,10 @@ p {
 #home_flex h1:nth-of-type(2) {
     flex: 1;
     max-width:3rem;
-    padding: 0 auto;
     color: var(--secondary-accent-color);
     font-size: 10rem;
 }
+
 #home_flex h2{
     flex: 1;
     max-width: 25rem;
@@ -147,12 +146,14 @@ p {
 	transition: all 0.4s;
 	list-style: none;
 }
+/* End home page nav component */
 
 /* Hamburger navigation menu component */
 #hamburger_menu {
     width: 100%;
 	margin-top: 0.5rem;
 }
+
 #hamburger_menu input{
     display: none;
 }
@@ -160,6 +161,7 @@ p {
 #hamburger_menu label{
     font-size: 4rem;
 }
+
 #menu_items {
     display: flex;
     justify-content: center;
@@ -191,8 +193,9 @@ p {
 	letter-spacing: 0.1rem;
 	font-size: 2rem;
 }
+/* End of hamburger navigation menu component */
 
-/* About me headshot and blurb component */
+/* Profile headshot component */
 #profile_blurb {
 	display: flex;
 	flex-wrap: wrap;
@@ -220,8 +223,9 @@ p {
 	text-align: center;
     font-family: 'Noto Serif', serif;
 }
+/* End of profile headshot component */
 
-/* Contact socials component */
+/* Social icons component */
 #socials {
     margin: 0 auto;
     display: flex;
@@ -234,6 +238,7 @@ p {
     opacity: 85%;
     z-index: -1;
 }
+/* End of social icons component */
 
 /* Contact form component*/
 form {
@@ -262,41 +267,49 @@ textarea {
     display: block;
     margin: 1rem;
 }
+/* End of contact form component */
 
-/* Projects figure component */
+/* Projects component */
 #projects_fig img{
     width: 100%;
     margin-top: 2rem;
 }
+
 #projects_fig figcaption{
     font-style: italic;
     font-family: 'Roboto', sans-serif;
 }
+/* End of projects component */
 
-/* Blog tile components */
+/* Blog post component */
 .blog_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
     max-width: 80rem;
 	margin: 0 auto;
 }
 
-.blog_article {
-    max-width: 36rem;
-    margin: 2rem;
+.blog_container h1{
+    margin-right: auto;
 }
+
 .date {
     font-size: 1.5rem;
     font-style: italic;
     letter-spacing: 0.15rem;
 }
 
+.blog_article {
+    max-width: 36rem;
+    margin: 2rem;
+}
+
 .blog_fig {
     max-width: 100%;
     margin: 0 auto;
 }
+/* End of blog post component */
 
 /* Footer component */
 footer {
@@ -311,6 +324,7 @@ footer {
     text-align: center;
     line-height: 3rem;
 }
+/* End of footer component */
 
 /* Media breakpoints */
 @media screen and (max-width: 48rem) {

@@ -12,24 +12,29 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
-<header>
-	<nav id="hamburger_menu">
-		<label for="hamburger_icon">&#9776;</label>
-		<input type="checkbox" id="hamburger_icon" />
-		<ul id="menu_items">
-			<a href="./index.html"><li>Home</li></a>
-			<a href="./aboutme.html"><li>About</li></a>
-			<a href="./projects.html"><li>Projects</li></a>
-			<a href="./blog.html"><li>Blog</li></a>
-			<a href="./contact.html"><li>Contact</li></a>
-		</ul>
-	</nav>
-</header>
-
 <body>
+
+    <!-- Hamburger header component -->
+    <header>
+        <nav id="hamburger_menu">
+            <label for="hamburger_icon">&#9776;</label>
+            <input type="checkbox" id="hamburger_icon" />
+            <ul id="menu_items">
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./aboutme.html"><li>About</li></a>
+                <a href="./projects.html"><li>Projects</li></a>
+                <a href="./blog.html"><li>Blog</li></a>
+                <a href="./contact.html"><li>Contact</li></a>
+            </ul>
+        </nav>
+    </header>
+    <!-- End of hamburger header component -->
+
 	<main>
 		<div class="content_container">
             <h1>Projects</h1>
+
+            <!-- Projects component -->
             <article>
                 <figure id="projects_fig">
                     <img src="resources/website_screen_800.png" alt="sceenshot of website sourcecode" />
@@ -40,11 +45,15 @@
                 <p>This website was been built in Visual Studio Code with HTML and CSS. It was deployed through Netlify and the domain was acquired from Porkbun. </p>
                 <p>You can check out the source code on <a href="https://github.com/rhynecs/portfolio-website">GitHub.</a></p>
             </article>
+            <!-- End of projects component -->
+
         </div>
 	</main>
 
+	<!-- Footer component -->
 	<footer>
 		<p>&#xA9;Henry Stevens 2022. All rights reserved.</p>
 	</footer>
+	<!-- End of footer component -->
 </body>
 </html>
